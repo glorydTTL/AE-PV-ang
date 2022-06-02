@@ -1,0 +1,34 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+<mat-grid-list cols="1" rowHeight="3:1">
+  <mat-grid-tile>
+      <div class="row">
+        <div class="col">
+
+          <button mat-raised-button [matMenuTriggerFor]="menu"><mat-icon>store</mat-icon>SALES</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Dealer Part Master</button>
+            <button routerLink="/vehicle-debit-note" mat-menu-item>Vehicle Debit Note</button>
+            <button mat-menu-item>Internal Order Inward Details</button>
+            <button mat-menu-item>Internal Order Outward Details</button>
+            <button mat-menu-item>OTC Sales Header</button>
+            <button mat-menu-item>OTC Sales Details</button>
+          </mat-menu>
+
+          <button mat-raised-button [matMenuTriggerFor]="menu"><mat-icon>memory</mat-icon>SPARES</button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>Dealer Part Master</button>
+            <button mat-menu-item>Internal Order Inward Details</button>
+            <button mat-menu-item>Internal Order Outward Details</button>
+            <button mat-menu-item>OTC Sales Header</button>
+            <button mat-menu-item>OTC Sales Details</button>
+          </mat-menu>
+
+          <button mat-raised-button><mat-icon>settings</mat-icon>SERVICES</button>
+          
+
+        </div>
+      </div>
+  </mat-grid-tile>
+</mat-grid-list>
+<router-outlet></router-outlet>

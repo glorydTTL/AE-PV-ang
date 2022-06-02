@@ -1,0 +1,21 @@
+.login_form {
+    margin: 10%;
+    align-items: center;
+}
+.container {
+  background: url('../././../assets/images/bg.jpg');
+  background-size: cover;
+  height: 100%;
+}
+
+.mat-raised-button {
+  color: rgb(255, 255, 255);
+  background-color:#307fe2;
+  font-size: 24px;
+  align-items: center;
+  padding: 20px 100px 20px 100px;
+  margin: 10px 20px 10px 20px;
+  text-align: center;
+  justify-content: center;
+
+}
